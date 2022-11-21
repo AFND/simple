@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+html {
+    background-image: url(img/background.png);
+}
+
+.container {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-image: url(.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    width: 60%;
+    height: 70%;
+    right: 20%;
+    top: 15%;
+    position: absolute; 
+    color: white;
+    box-shadow: 10px 10px greenyellow;
+}
+
+.container header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+.brand{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h2{
+    color: greenyellow;
+    font-weight: lighter;
+    padding-right: 10px;
+}
+
+header h3{
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 14pt;
+    padding-right: 10px;
+}
+
+.container header ul li a{
+    color: white;
+    font-size: 16pt;
+    padding-left: 10px;
+    opacity: 90%;
+    transition: scale(1.5);
+
+}
+
+.container header ul li a image:hover{
+    transition: transform .2s;
+}
+
+.container header ul li a img:hover{
+transition: scale(1.5);
+}
+
+.isi {
+    position: absolute;
+    left: 9%;
+    top: 60%;
+}
+
+.isi h2 {
+    font-size: 32pt;
+    color: greenyellow;
+    border: none;
+    border-bottom: 4px solid greenyellow;
+}
+
+.isi .cont {
+border: 1px solid greenyellow;
+width: fit-content;
+background-color: greenyellow;
+padding: 5px;
+}
+
+.cont h3 {
+    color: black;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 920px) {
+    .container{
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        right: 10%;
+    }
+
+    .isi h2{
+        font-size: 22pt;
+    }
+
+    .cont h3 {
+        font-size: 11pt;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .container{
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        right: 10%;
+    }
+
+    .isi h2{
+        font-size: 16pt;
+    }
+
+    .cont h3 {
+        font-size: 8pt;
+    }
+    
+  }
